@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>#playcards</title>
+ <link rel="stylesheet" href="style.css">
+ <link rel="shortcut icon" href="icon.png" type="image/png">
+ <script src="script.js"></script>
+  </head>
+  
+  <body>
+<header>
+<div id="name">
+<h1>#PlayCards</h1>
+<div id="scroll"onclick=hideAside()></div>
+</div>
+<div id="line_top"></div>
+</header>
+
+<main class="game">
+<section>  <div class="container">
+
+   <div id="1"onclick=clickMe('#img1',0,"1")><img id="img1"  src="card.png"></div>
+   <div id="2"onclick=clickMe('#img2',1,"2")><img id="img2" src="card.png"></div>
+   <div id="3"onclick=clickMe('#img3',2,"3")><img id="img3" src="card.png"></div>
+   <div id="4"onclick=clickMe('#img4',3,"4")><img id="img4" src="card.png"></div>
+
+   <div id="5"onclick=clickMe('#img5',4,"5")><img id="img5"  src="card.png"></div>
+   <div id="6"onclick=clickMe('#img6',5,"6")><img id="img6"  src="card.png"></div>
+   
+
+
+   <div id="7"onclick=clickMe('#img7',6,"7")><img id="img7"  src="card.png"></div>
+   <div id="8"onclick=clickMe('#img8',7,"8")><img id="img8"  src="card.png"></div>
+   <div id="9"onclick=clickMe('#img9',8,"9")><img id="img9"  src="card.png"></div>
+   <div id="10"onclick=clickMe('#img10',9,"10")><img id="img10"  src="card.png"></div>
+
+   <div id="11"onclick=clickMe('#img11',10,"11")><img id="img11"  src="card.png"></div>
+   <div id="12"onclick=clickMe('#img12',11,"12")><img id="img12"  src="card.png"></div>
+   
+
+
+   <div id="13"onclick=clickMe('#img13',12,"13")><img id="img13"  src="card.png"></div>
+   <div id="14"onclick=clickMe('#img14',13,"14")><img id="img14"  src="card.png"></div>
+   <div id="15"onclick=clickMe('#img15',14,"15")><img id="img15"  src="card.png"></div>
+   <div id="16"onclick=clickMe('#img16',15,"16")><img id="img16"  src="card.png"></div>
+
+   <div id="17"onclick=clickMe('#img17',16,"17")><img id="img17"  src="card.png"></div>
+   <div id="18"onclick=clickMe('#img18',17,"18")><img id="img18"  src="card.png"></div>
+   
+
+
+
+
+</div>
+ </section>
+
+<div id="count">
+<aside><p>Quantity of flipped cards</p>
+<p id="flipped">0</p>
+<p>Cards' pairs</p>
+<p id="pairs">0</p>
+<p> Pairs are matched by the first try</p>
+<p id="first_try">0</p>
+
+<div id="sekundomers">
+
+  <div id="minute">00</div>
+    <div id="points1">:</div>
+  <div id="second">00</div>
+    <div id="points2">:</div>
+  <div id="ms">00</div>
+
+
+  
+</div>
+</aside>
+</div>
+
+<div id ="start_page">
+
+<div id="gradient">
+<p id="press_start"onclick=hiddenStart();>START<p>
+</div>
+
+
+
+</div>
+		
+<div id="finish_page" style="display:none;">
+
+<div class="result" >
+<div id="f_flipped_div">
+
+<div>Quantity of flipped cards</div>
+<div id="f_flipped">0</div>
+
+</div>
+
+
+<div id= "f_pairs_div">
+
+
+<div>Cards' pairs</div> 
+<div id="f_pairs">0</div>
+</div>
+<div id="f_first_try_div">
+<div> Pairs are matched by the first try</div>
+<div id="f_first_try">0</div>
+
+</div>
+
+<div id="sekundomers">
+
+
+  <div id="f_minute">00</div>
+  <div id="points3">:</div>
+  <div id="f_second">00</div>
+  <div id="points4">:</div>
+  <div id="f_ms">00</div>
+ 
+</div>
+<div class="border-liners"></div>
+<div  id="restart" OnClick = 'window.location.reload()'><p>Restart</p></div>
+<div class="border-liners"></div>
+</div>
+
+</main>
+<div id="line_bottom"></div>
+
+<footer>
+
+<p id="f1">©minutes of inspiration</p>
+<p id="f2">2022</p>
+</footer>
+<style>
+
+</body>
+</html>

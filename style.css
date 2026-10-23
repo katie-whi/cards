@@ -103,7 +103,7 @@ img{
     box-shadow: 0 0 15px #01334a;
     user-select: none;
     max-width:100%;
-    object-fit:center;
+    object-fit:fill;
 }
 
 .container{
@@ -531,15 +531,11 @@ footer{
 
 .container>div{
 	width:33%;
-	height:10%;
-    align-content:center;
+	aspect-ratio: 2 / 3;
+    
 	
 }
 
-img{
-	width:33vw;
-	height:12vh;
-}
 
 aside{
     height:42vh;

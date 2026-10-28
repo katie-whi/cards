@@ -16,6 +16,19 @@ const preloadedImages = imageNames.map(src => {
     img.src = src;
     return img;
 });
+
+const imagesReady = Promise.all(
+    preloadedImages.map(img => {
+        if (img.complete && img.naturalWidth > 0) {
+            return Promise.resolve();
+        }
+
+        return new Promise(resolve => {
+            img.onload = resolve;
+            img.onerror = resolve;
+        });
+    })
+);
 var num =['green.png','orange.png','light_blue.png','brown.png',
     'mint.png','yellow.png','pink.png','purple.png',
     'blue.png','green.png','orange.png','light_blue.png','brown.png',
@@ -179,11 +192,11 @@ var num =['green.png','orange.png','light_blue.png','brown.png',
       
     }
     
-    function hiddenStart () {
-    
-        document.getElementById("start_page").style.display = "none";
-        
-        start();
-    
-    }
+async function hiddenStart() {
+    await imagesReady;
+
+    document.getElementById("start_page").style.display = "none";
+
+    start();
+}
     

@@ -1,3 +1,21 @@
+const imageNames = [
+    'card.png',
+    'green.png',
+    'orange.png',
+    'light_blue.png',
+    'brown.png',
+    'mint.png',
+    'yellow.png',
+    'pink.png',
+    'purple.png',
+    'blue.png'
+];
+
+const preloadedImages = imageNames.map(src => {
+    const img = new Image();
+    img.src = src;
+    return img;
+});
 var num =['green.png','orange.png','light_blue.png','brown.png',
     'mint.png','yellow.png','pink.png','purple.png',
     'blue.png','green.png','orange.png','light_blue.png','brown.png',
